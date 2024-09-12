@@ -9,7 +9,7 @@ import { ProductsService } from '../../services/products.service';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  products: any = [];
+  products: any[] = [];
   constructor(private productsService: ProductsService) { }
   ngOnInit(): void {
     this.products = this.productsService.getProducts();

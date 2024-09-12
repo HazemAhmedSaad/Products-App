@@ -1607,7 +1607,7 @@ export class ProductsService {
   ]
 
   constructor() { }
-  getProducts() {
+  getProducts(): any[] {
     return this.productsData;
   }
 }
